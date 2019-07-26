@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -6,21 +7,28 @@ body {
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-rows: 1fr 5fr 1fr;
+    font-family: Roboto, sans-serif;
+    grid-template-rows: 1fr 90% 1fr;
     grid-template-columns: 1fr 80%;
     grid-template-areas:
             "header header"
-            "nav-css main-body"
-            "nav-css footer";
+            "nav main-body"
+            "nav footer";
 }
 
 .main{
     grid-area: main-body;
 }
+main {
+    background: yellow;
+}
 
 header {
     grid-area: header;
     background: black;
+    /*color: white;*/
+}
+header a {
     color: white;
 }
 header ul {
@@ -33,22 +41,28 @@ header ul {
 header ul li {
     margin: 0 .5em 0 .5em;
 }
-header ul:hover {
+header ul a:hover {
     background: gray;
 }
 
 nav{
-    grid-area: nav-css;
+    grid-area: nav;
+    background: deepskyblue;
+    width: 100%;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: stretch;
+    justify-content: flex-start;
+}
 footer{
     grid-area: footer;
     display: flex;
     flex-direction: column;
-}
-nav ul {
-    display: flex;
-    flex-direction: column;
+    background: lightcoral;
 }
 
 footer ul{
@@ -59,20 +73,35 @@ footer ul{
 }
 footer ul li{
     padding: 1em;
-
 }
-footer ul li:hover{
-    background: black;
-    color: white;
-}
-
-footer ul li a:hover{
-    color: white;
-}
+/*footer ul li:hover{*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
+/*footer ul li a:hover{*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
 h2 {
     color: #358275;
 }
 article {
     display: flex;
     justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: .5em;
+}
+a:hover {
+    background: black;
+    color: white;
+    width: 100%;
+}
+.menu {
+    font-weight: bold;
+    margin: 1em;
+    font-size: larger;
 }
