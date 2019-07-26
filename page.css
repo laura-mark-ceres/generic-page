@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+}
+header {
+    background: black;
+    color: white;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin: .5em;
+}
+header ul li {
+    margin: 0 .5em 0 .5em;
+}
+header ul:hover {
+    background: gray;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    color: #358275;
+}
+article {
+    display: flex;
+    justify-content: space-around;
+}
