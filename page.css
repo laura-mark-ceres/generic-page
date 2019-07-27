@@ -43,14 +43,14 @@ header ul {
     align-items: center;
     justify-content: flex-start;
     list-style: none;
-    margin: .5em;
+    margin:  .75em .5em .5em .5em;
     width: 100%;
 }
 header ul li {
-    margin: 0 .5em 0 .5em;
+    /*margin: 0 .5em 0 .5em;*/
 }
 header ul a:hover {
-    background: gray;
+    background: rgb(38, 38, 38);
 }
 
 nav{
@@ -91,10 +91,11 @@ footer ul li{
 .foot1 {
     padding: 2em;
     color: white;
+    background: rgb(101,	101,	101	) 	;
 }
 .foot2 {
     padding: .5em;
-    background: darkslategray;
+    background: rgb(38, 38, 38)		;
     color: white;
 }
 /*footer ul li:hover{*/
@@ -152,18 +153,27 @@ article .ads {
 
 .ads{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 .ad1 {
     height: 50px;
     width: 200px;
+    /*font-size: 15px;*/
     border: 1px solid gray;
-    margin: 1em 1em 1em 1em;
+    border-radius: 4px;
+    margin: .5em;
+
 }
 .ad2 {
-    height: 100px;
+    height: 75px;
     width: 200px;
+    /*font-size: 20px;*/
     border: 1px solid gray;
-    margin: 0 1em 0 1em;
+    border-radius: 4px;
+    margin: .5em;
+
 }
 .ads ul {
     list-style: none;
