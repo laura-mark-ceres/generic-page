@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    overflow: auto;
+
+}
+.wrapper {
+    display: grid;
+    width: calc(100% - 2em);
+    height: calc(100% - 60px);
+/*top: 40px;*/
+    /*height: auto;*/
+    margin-top: 40px;
+    margin-left: 1em;
+    margin-right: 1em;
+    grid-template-rows: 80% 10%;
+    grid-template-columns: 20% 80%;
+
+    grid-gap: 1em;
+
+}
+
+/*.main{*/
+/*    grid-area: main-body;*/
+/*}*/
+main {
+    background: bisque;
+    grid-area: 1 / 2 / -1 / -1;
+}
+
+
+header {
+    /*grid-area: header;*/
+    /*display: flex;*/
+    background: black;
+    top:0;
+    /*overflow:hidden;*/
+    position: fixed;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: flex-start;*/
+    list-style: none;
+    /*margin:  .75em .5em .5em .5em;*/
+    width: 100%;
+    height: fit-content;
+
+}
+header a {
+    color: white;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    /*margin:  .75em .5em .5em .5em;*/
+    width: 100%;
+}
+header ul li {
+    margin: 0 .5em 0 .5em;
+}
+header ul a:hover{
+    background: gray;
+}
+
+nav{
+    /*grid-area: nav;*/
+    background: antiquewhite;
+    width: 100%;
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+nav ul li {
+    margin-left: .5em;
+}
+footer{
+    /*grid-area: footer;*/
+    display: flex;
+    flex-direction: column;
+    background: lightgrey;
+    grid-area: 3/ 2 / -1 / -1;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: white;
+}
+footer ul li{
+    padding: 1em;
+}
+.foot1 {
+    padding: 2em;
+    color: white;
+    background: rgb(101,	101,	101	) 	;
+}
+.foot2 {
+    padding: .5em;
+    background: rgb(38, 38, 38)		;
+    color: white;
+}
+/*footer ul li:hover{*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
+/*footer ul li a:hover{*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
+h2 {
+    color: #358275;
+    margin: 1em 1em 1em .5em;
+}
+p {
+    margin-left: .5em;
+}
+/*article {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*}*/
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: .5em;
+}
+
+ /*Use the not to avoid overwriting the class for the links in the neader*/
+
+a:not(header ul a ):hover {
+    background: black;
+    color: white;
+    width: 100%;
+}
+.menu {
+    font-weight: bold;
+    margin: .65em;
+    font-size: larger;
+}
+
+article{
+    /*display: grid;*/
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*grid-template-rows: 1fr;*/
+    /*grid-template-columns: 5fr 1fr;*/
+    /*grid-gap: 1em;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info{
+    /*grid-area: 1/1/2/2;*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*article .ads {*/
+/*    grid-area: 1/2/-1/-1;*/
+/*}*/
+
+.ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.ad1 {
+    height: 50px;
+    width: 200px;
+    /*font-size: 15px;*/
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: .5em;
+
+}
+.ad2 {
+    height: 75px;
+    width: 200px;
+    /*font-size: 20px;*/
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: .5em;
+
+}
+.ads ul {
+    list-style: none;
+}
