@@ -30,7 +30,7 @@ body {
 /*    grid-area: main-body;*/
 /*}*/
 main {
-    background: whitegit;
+    background: white;
     grid-area: 1 / 2 / -1 / -1;
 }
 
