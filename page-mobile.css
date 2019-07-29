@@ -161,6 +161,8 @@ article{
     /*grid-template-rows: 1fr;*/
     /*grid-template-columns: 5fr 1fr;*/
     /*grid-gap: 1em;*/
+    background: white;
+    /*grid-area: 1/2/-1/-1;*/
     display: flex;
     flex-direction: row;
     /*flex-wrap: nowrap;*/
